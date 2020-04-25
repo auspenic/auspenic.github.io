@@ -1,0 +1,29 @@
+.images{
+				overflow: hidden;
+			}
+
+.images blockquote{
+	position: absolute;
+	left: 0px; bottom: 0px;
+	color:#FFF; line-height:24px;
+	display:block; width:340px;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+  opacity: 0
+}
+
+			.images img{
+				cursor: pointer;
+				transition: all 0.6s;
+			}
+			.images img:hover{
+				transform: scale(1.4);
+			}
+
+.images blockquote:hover{
+			    opacity: 0.9;
+			    transition:opacity 0.5s;
+			    -webkit-transition: opacity 0.5s}
+			}
