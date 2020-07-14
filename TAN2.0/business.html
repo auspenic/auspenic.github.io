@@ -47,13 +47,74 @@
                     <br>
                     <p class="lead mb-5">想了解最新政策吗？想自由创业吗？想摆出最炫的摊儿吗？快来这儿看看吧！</p>
                     <div class="social-icons">
+                        <a class="social-icon" href="#interests">推荐</a>
                         <a class="social-icon" href="#experience">政策</a>
                         <a class="social-icon" href="#skills">方法</a>
-                        <a class="social-icon" href="#interests">推荐</a>
                     </div>
                 </div>
             </section>
             <hr class="m-0" />
+
+            <!-- Interests-->
+            <section class="resume-section" id="interests">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">摆摊内容推荐</h2>
+                    <p>在摆摊生意中，各种各样的小商品都很常见，当然也不乏大件，但因为是摆地摊，经营地点一般不大固定，所以摆摊卖大件商品难免会有些许不方便，如果有一辆车就最好了，大件小件都不用过于担心。如今看来，中国有十大地摊暴利产品，它们分别是：生活用品——比如价格低廉的菜篮子、洗脸盆、收纳盒。装饰类产品——假花、盆栽和鲜花。还有餐饮小吃、甜品饮料，服装包包类，手机贴膜以及打印照片，水果类的地摊产品，玩具类，读书类，和家用保健类</p>
+                    <p class="mb-0">针对想全职摆地摊创业，能拿出来资金可以选择“小吃类”；针对兼职摆地摊，没有多少资金，可以选择“服饰类”；对于中年工薪族来说，可以选择卖花卉盆栽；在年轻人多的夜市，则可以摆摊卖新奇的创意产品和儿童玩具。</p>
+<br>
+<br>
+                    <h4>热门地摊小吃榜</h4>
+                    <div id="chart"></div>
+                    <script>
+                    var chart = c3.generate({
+                      bindto:'#chart',
+                       data: {
+                         columns: [
+                         ['烧烤', 38],
+                         ['冰粉', 25],
+                         ['牛杂', 16],
+                         ['煎饼', 11],
+                         ['炸串', 8],
+                              ],
+                              type : 'donut'
+                                },
+                                donut: {
+                                  title: "热门地摊小吃榜",
+                                   }
+                                    });
+                    </script>
+<br>
+<br>
+                    <h4>热门地摊种类</h4>
+                    <div id="chart1"></div>
+                    <script>
+                    var chart = c3.generate({
+                      bindto:'#chart1',
+                       data: {
+                         columns: [
+                         ['小吃', 35],
+                         ['古玩', 26],
+                         ['衣服', 18],
+                         ['玩具', 13],
+                         ['鞋子', 8],
+                              ],
+                              type : 'donut'
+                                },
+                                donut: {
+                                  title: "热门地摊种类",
+                                   }
+                                    });
+                    </script>
+                </div>
+            </section>
+            <hr class="m-0" />
+        </div>
+
+
+
+
+
+
             <!-- Experience-->
             <section class="resume-section" id="experience">
                 <div class="resume-section-content">
@@ -156,60 +217,7 @@
                 </div>
             </section>
             <hr class="m-0" />
-            <!-- Interests-->
-            <section class="resume-section" id="interests">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">摆摊内容推荐</h2>
-                    <p>在摆摊生意中，各种各样的小商品都很常见，当然也不乏大件，但因为是摆地摊，经营地点一般不大固定，所以摆摊卖大件商品难免会有些许不方便，如果有一辆车就最好了，大件小件都不用过于担心。如今看来，中国有十大地摊暴利产品，它们分别是：生活用品——比如价格低廉的菜篮子、洗脸盆、收纳盒。装饰类产品——假花、盆栽和鲜花。还有餐饮小吃、甜品饮料，服装包包类，手机贴膜以及打印照片，水果类的地摊产品，玩具类，读书类，和家用保健类</p>
-                    <p class="mb-0">针对想全职摆地摊创业，能拿出来资金可以选择“小吃类”；针对兼职摆地摊，没有多少资金，可以选择“服饰类”；对于中年工薪族来说，可以选择卖花卉盆栽；在年轻人多的夜市，则可以摆摊卖新奇的创意产品和儿童玩具。</p>
-<br>
-<br>
-                    <h4>这是热门地摊小吃数据图</h4>
-                    <div id="chart"></div>
-                    <script>
-                    var chart = c3.generate({
-                      bindto:'#chart',
-                       data: {
-                         columns: [
-                         ['烧烤', 38],
-                         ['冰粉', 25],
-                         ['牛杂', 16],
-                         ['煎饼', 11],
-                         ['炸串', 8],
-                              ],
-                              type : 'donut'
-                                },
-                                donut: {
-                                  title: "热门地摊小吃数据图",
-                                   }
-                                    });
-                    </script>
-<br>
-<br>
-                    <h4>这是最受关注的地摊种类数据图</h4>
-                    <div id="chart1"></div>
-                    <script>
-                    var chart = c3.generate({
-                      bindto:'#chart1',
-                       data: {
-                         columns: [
-                         ['小吃', 35],
-                         ['古玩', 26],
-                         ['衣服', 18],
-                         ['玩具', 13],
-                         ['鞋子', 8],
-                              ],
-                              type : 'donut'
-                                },
-                                donut: {
-                                  title: "最受关注的地摊种类",
-                                   }
-                                    });
-                    </script>
-                </div>
-            </section>
-            <hr class="m-0" />
-        </div>
+
 
         <footer>
           <div class="container-fluid padding">

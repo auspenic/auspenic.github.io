@@ -160,6 +160,7 @@ dd {
 
 blockquote {
   margin: 0 0 1rem;
+
 }
 
 b,
@@ -499,7 +500,7 @@ mark,
 
 .blockquote {
   margin-bottom: 1rem;
-  font-size: 1.25rem;
+
 }
 
 .blockquote-footer {
