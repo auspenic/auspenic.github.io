@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>欢迎来到摊儿</title>
+        <link rel="icon" type="image/x-icon" href="assets\img\favicon.jpg" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">摊儿</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets\img\favicon.jpg" alt="" /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">逛摊儿</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="business.html">摆摊儿</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="contact.html">联系我们</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">联系我们</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <div class="subheading mb-3">无论你是想要提供优质有趣的“摊儿”信息，还是想帮自己的“摊儿”吸引更多顾客与关注，都可以联系我们。填写下方的信息即可让我们帮助你实现心愿。</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6 mb-5 mb-md-0" data-aos="fade-up">
+
+                        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+
+                          <div class="row">
+                            <div class="col-md-6 form-group">
+                              <label for="name">您的姓名</label>
+                              <input type="text" name="name" class="form-control" id="name" data-rule="minlen:2" data-msg="请输入内容" />
+                              <div class="validate"></div>
+                            </div>
+                            <div class="col-md-6 form-group">
+                              <label for="name">您的邮箱</label>
+                              <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="请输入实际有效的邮箱地址" />
+                              <div class="validate"></div>
+                            </div>
+                            <div class="col-md-12 form-group">
+                              <label for="name">您（推荐）的摊儿名</label>
+                              <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:2" data-msg="请输入内容" />
+                              <div class="validate"></div>
+                            </div>
+                            <div class="col-md-12 form-group">
+                              <label for="exampleFormControlSelect1">经营类别</label>
+                              <select class="form-control" id="exampleFormControlSelect1">
+                                <option>衣</option>
+                                <option>食</option>
+                                <option>玩</option>
+                                <option>用</option>
+                              </select>
+                            </div>
+
+                            <div class="col-md-12 form-group">
+                              <label for="name">经营地点</label>
+                              <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:2" data-msg="请输入内容" />
+                              <div class="validate"></div>
+                            </div>
+                            <div class="col-md-12 form-group">
+                              <label for="name">经营时间</label>
+                              <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:2" data-msg="请输入内容" />
+                              <div class="validate"></div>
+                            </div>
+                            <div class="col-md-12 form-group">
+                              <label for="name">经营特色</label>
+                              <textarea class="form-control" name="message" cols="30" rows="10" data-rule="required" data-msg="请输入内容"></textarea>
+                              <div class="validate"></div>
+                            </div>
+                            <div class="input-group">
+
+                              <div class="col-md-12 form-group">
+                                <label for="name">摊儿的图片或视频资讯</label>
+                    <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="inputGroupFile04">
+                    <label class="custom-file-label" for="inputGroupFile04">选择文件</label>
+                    </div>
+                    </div>
+
+                            <div class="col-md-12 mb-3">
+                              <div class="loading">加载中</div>
+                              <div class="error-message"></div>
+                              <div class="sent-message">感谢您的提交，希望很快能遇见你的“摊儿”！</div>
+                            </div>
+
+                            <div class="col-md-6 form-group">
+                              <input type="submit" class="readmore d-block w-100" value="提交信息">
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    </div>
+
+                </div>
+            </section>
+            <hr class="m-0" />
+
+
+
+
+        <footer>
+          <div class="container-fluid padding">
+            <div class="row text-center">
+              <div class="col-md-4">
+                <hr class="light">
+                <h5>地址</h5>
+                <hr class="light">
+                <p>北京市朝阳区中国传媒大学</p>
+              </div>
+              <div class="col-md-4">
+                <hr class="light">
+                <h5>电话</h5>
+                <hr class="light">
+                <p>+86 123 6759 3863</p>
+              </div>
+              <div class="col-md-4">
+                <hr class="light">
+                <h5>邮箱</h5>
+                <hr class="light">
+                <p>taner@gmail.com</p>
+              </div>
+        <br>
+        <br>
+        <br>
+              <div class="col-12 social">
+                <a href="#"><span class="icofont-twitter"></span></a>
+                <a href="#"><span class="icofont-facebook"></span></a>
+                <a href="#"><span class="icofont-dribbble"></span></a>
+                <a href="#"><span class="icofont-behance"></span></a>
+              </div>
+        <br>
+        <br>
+        <br>
+              <div class="col-12">
+                <p class="mb-1">&copy; tanergroup. All Rights Reserved</p>
+                <div class="credits">
+                  Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                </div>
+              </div>
+        </div>
+        </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
